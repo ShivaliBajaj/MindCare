@@ -1,3 +1,22 @@
+# MindCare
+
+An India-contextualized suicide risk intelligence MVP focused on early behavioral signal detection, temporal risk analysis, and explainable AI for mental health research.
+
+## Project Goals
+
+- Detect suicide risk patterns from text data
+- Analyze temporal behavioral escalation
+- Prioritize interpretability and ethical AI reasoning
+- Incorporate Indian mental health context using NCRB and public reports
+
+## Core Stack
+
+- MentalBERT
+- LSTM
+- XGBoost
+- SHAP
+- FastAPI
+
 ## Ethical and Clinical Considerations
 
 MindCare is a research-oriented suicide risk intelligence MVP focused on early behavioral signal detection, temporal risk analysis, and model interpretability.
