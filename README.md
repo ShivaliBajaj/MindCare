@@ -34,3 +34,13 @@ Key principles followed during development:
 
 Important:
 This system is intended strictly for educational and research purposes and should never be used as a standalone clinical diagnostic tool.
+
+## Environment Setup
+
+MindCare uses a dedicated Conda environment named `mindcare`
+for dependency isolation and reproducibility.
+
+### Create Environment
+
+```bash
+conda create -n mindcare python=3.11
