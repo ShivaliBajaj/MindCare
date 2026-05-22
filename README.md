@@ -44,3 +44,6 @@ for dependency isolation and reproducibility.
 
 ```bash
 conda create -n mindcare python=3.11
+```
+
+> “Mental health is a right, not a privilege.”
