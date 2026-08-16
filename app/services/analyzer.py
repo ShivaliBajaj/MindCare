@@ -2,17 +2,25 @@ def analyze_text(text: str):
     """
     Placeholder analysis service.
 
-    This function will later:
-    - Run MentalBERT inference
-    - Generate behavioral risk signals
-    - Apply taxonomy mapping
-    - Produce explainable output
-
-    For now, it returns a placeholder response.
+    Future responsibilities:
+    - MentalBERT inference
+    - Behavioral signal extraction
+    - Severity estimation
+    - Explainable AI outputs
     """
 
-    return {
-    "status": "success",
-    "received_text": text,
-    "message": "Analysis pipeline placeholder"
-}
+    clean_text = text.strip()
+
+    if not clean_text:
+        return {
+            "status": "error",
+            "message": "Input text cannot be empty."
+        }
+
+    response = {
+        "status": "success",
+        "received_text": clean_text,
+        "message": "Analysis pipeline placeholder"
+    }
+
+    return response
