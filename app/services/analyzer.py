@@ -1,4 +1,6 @@
-def analyze_text(text: str):
+from app.schemas.response import AnalysisResponse
+
+def analyze_text(text: str) -> AnalysisResponse:
     """
     Placeholder analysis service.
 
@@ -12,15 +14,15 @@ def analyze_text(text: str):
     clean_text = text.strip()
 
     if not clean_text:
-        return {
-            "status": "error",
-            "message": "Input text cannot be empty."
-        }
+        return AnalysisResponse(
+            status="error",
+            message="Input text cannot be empty."
+        )
 
-    response = {
-        "status": "success",
-        "received_text": clean_text,
-        "message": "Analysis pipeline placeholder"
-    }
+    response = AnalysisResponse(
+        status="success",
+        received_text=clean_text,
+        message="Analysis pipeline placeholder"
+    )
 
     return response

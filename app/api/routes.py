@@ -10,5 +10,5 @@ router = APIRouter()
 
 @router.post("/analyze",
              response_model=AnalysisResponse,)
-def analyze(request: AnalysisRequest):
+def analyze(request: AnalysisRequest) -> AnalysisResponse:
     return analyze_text(request.text)
