@@ -16,3 +16,8 @@ app.include_router(router)
 @app.get("/")
 def root():
     return {"message": "MindCare backend is running"}
+
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
