@@ -18,6 +18,7 @@ class AnalysisResponse(BaseModel):
     analysis endpoint"""
     
     status: Literal["success"]
+    analysis_status: Literal["placeholder"] = "placeholder"
     review_priority: ReviewPriority = ReviewPriority.NOT_ASSESSED
     received_text: str
     message: str
